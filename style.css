@@ -1,0 +1,796 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "nunito", sans-serif;
+}
+
+.top {
+    background: rgba(0, 0, 0, 0.4)url(image/Leonardo.jpg);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 98%;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin-left: -70px;
+    flex-basis: 18%;
+}
+
+.logo h2 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(243, 208, 7);
+    font-weight: 900;
+}
+
+.logo h2 span {
+    color: rgba(36, 250, 54, 0.671);
+    transition: all 0.2s ease-in-out;
+}
+
+header .logo h2:hover {
+    cursor: pointer;
+}
+
+.logo h2 span:hover {
+    color: rgb(243, 208, 7);
+}
+
+.nav {
+    margin-right: -100px;
+    flex-basis: 55%;
+}
+
+header .nav nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header .nav nav ul li {
+    text-align: center;
+    list-style: none;
+    flex-grow: 1;
+    width: 100%;
+    position: relative;
+}
+
+header .nav nav ul li:nth-child(7) ul {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+header .nav nav ul li:nth-child(7):hover ul {
+    z-index: 1;
+    display: block;
+}
+
+.drop-down li {
+    padding: 7px 0;
+    display: block;
+    width: 100%;
+}
+
+header .nav nav ul li a {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+header .nav nav ul li a:hover {
+    color: rgb(243, 208, 7);
+
+}
+
+.text {
+    margin-top: 7% !important;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    
+}
+
+.text h2 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 150px;
+    cursor: default;
+    color: rgb(243, 208, 7);
+}
+
+.text span {
+    color: rgba(36, 250, 54, 0.671);
+
+}
+
+.text p {
+    color: white;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 22px;
+    margin: 0 270px;
+    text-wrap: wrap;
+}
+
+.top .btn {
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px auto;
+}
+
+.top .btn a button {
+    width: 140px;
+    font-size: 16px;
+    padding: 18px 28px;
+    color: white;
+    border-radius: 8px;
+}
+
+.top .btn a .btn-1 {
+    border: 1px solid rgba(243, 208, 7, 0.8);
+    background-color: rgba(243, 208, 7, 0.8);
+    transition: all 0.2s ease 0s;
+}
+
+.top .btn a .btn-2 {
+    border: 1px solid rgba(36, 250, 54, 0.67);
+    background-color: rgba(36, 250, 54, 0.67);
+    transition: all 0.2s ease 0s;
+}
+
+.top .btn a .btn-1:hover {
+    background-color: rgba(243, 208, 7, 0);
+    cursor: pointer;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+.top .btn a .btn-2:hover {
+    background-color: rgba(36, 250, 54, 0);
+    cursor: pointer;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
+}
+  
+
+       /* book a table */
+
+
+.book-a-table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    background-color: blanchedalmond;
+}
+
+.book-a-table-content {
+    flex-basis: 50%;
+}
+
+.book-a-table-content h4 {
+    margin-top: 20%;
+    color: rgb(43, 92, 15);
+}
+
+.book-a-table-content h1 {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(59, 55, 55);
+}
+
+.book-a-table-content p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.book-a-table-form {
+    padding: 80px 30px;
+    flex-basis: 30%;
+    background-color: rgb(252, 167, 11);
+    
+}
+
+.book-a-table-form input, select {
+    color: white;
+    width: 100%;
+    padding: 10px 5px; 
+    margin: 10px 0;
+    background-color: rgb(252, 167, 11);
+    border: 2px solid #fffa;
+    border-radius: 4px;
+    transition: all 0.1s ease 0s;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+  }
+
+button[type="submit"] {
+    font-weight: 500;
+    width: 340px;
+    color: rgb(252, 167, 11);
+    padding: 10px 8px; 
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid #fffa;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: all 0.2s ease 0s;
+}
+
+.book-a-table-form input:hover {
+    background-color: rgba(252, 167, 11, 1);
+    border: 2px solid white;
+}
+
+.book-a-table-form form select:hover {
+    border: 2px solid white;
+
+
+}
+
+button[type="submit"]:hover {
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+select option {
+    padding: 1px;
+    background-color: rgba(252, 167, 11, 1);
+
+}
+
+option:hover {
+    background-color: red;
+    background-color: rgba(252, 167, 11, 0.8);
+}
+
+
+      /* about seection starts */
+
+.about {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+.about .chef {
+    margin: 4% 0;
+    flex-basis: 20%;
+    height: 60px;
+    position: relative;
+}
+
+.about .chef .ichef {
+    border-radius: 5px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.about .chef .fa {
+    border-radius: 10px;
+    position: absolute;
+    box-shadow: 0 0 5px 5px rgb(235, 153, 31);
+    top: 232px;
+    left: 147px; 
+}
+
+.about .about-us {
+    margin: 8% 5%;
+    flex-basis: 40%;
+}
+
+.about .about-us h4 {
+    color: rgb(43, 92, 15);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 0;
+}
+  
+
+.about .about-us h1 {
+    color: rgb(80, 61, 61);
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 70px;
+}
+
+
+.about .about-us p {
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.about .about-us a button {
+    margin-top: 4%;
+    border-radius: 5px;
+    border: 1px solid rgb(235, 153, 31);
+    font-size: 15px;
+    font-weight: 300;
+    color: white;
+    background-color: rgb(235, 153, 31);
+    padding: 18px;
+    transition: all 0.2s ease 0s;
+}
+
+.about .about-us a button:hover {
+    background-color: transparent;
+    color: rgb(235, 153, 31);
+    cursor: pointer;
+}
+
+
+/* Items section starts */
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+    background-color: #ccc;
+}
+
+.items .item {
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 27%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 247, 247);
+    height: 250px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 black;
+    transition: all 0.01s ease 0s;
+}
+
+.items .item:hover {
+    border: 2px solid gainsboro;
+}
+
+.items .item img {
+    width: 110px;
+    color: yellow;
+}
+
+.items .item-3 {
+    margin-right: 5%;
+}
+
+.items .item-1 {
+    margin-left: 5%;
+}
+
+
+.items .item p {
+    line-height: 19px;
+    margin: 4% auto;
+}
+
+.items .item a {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(235, 153, 31);
+    transition: all 0.1s ease 0s;
+}
+
+.items .item a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+    
+}
+
+
+         /* team section starts */
+
+
+
+.team {
+    height: 75vh;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.team .team-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 0;
+    text-align: center;
+    color: rgb(43, 92, 15);
+    margin: 2% auto 0 auto;
+}
+
+.team .team-text h1 {
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(59, 44, 38);
+}
+
+.team .our-team {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.team .our-team .team-member {
+    margin: 0 -9%;
+    height: 285px;
+    flex-basis: 230px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 0 15px 0 black;
+}
+
+.team .our-team .team-member img {
+    height: 285px;
+    width: 230px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.team .our-team .team-member .icon {
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    top: 50%;
+    left: 0;
+    bottom: 50%;
+    right: 0;
+}
+
+.team .our-team .team-member .icon i {
+    box-shadow: 0 0 8px 5px rgb(248, 115, 62);
+    background-color: rgba(248, 115, 62, 0.9);
+    border-radius: 100%;
+    color: white;
+    border: none;
+    z-index: -999;
+    transition: all 0.02s ease-out 0s, border 0.5s ease 0s;
+}
+
+.team .our-team .team-member:hover {
+    box-shadow: 0 0 15px 5px black;
+    border-radius: 16px;
+    border: 2px solid inherit;
+}
+
+.team .our-team .team-member:hover .icon i {
+    z-index: 999;
+    cursor: pointer;
+}
+
+.team .our-team .team-member .icon .fa-twitter:hover {
+    border: 2px solid rgb(248, 115, 62);
+    /* display: block; */
+    box-shadow: 0 0 8px 5px rgb(248, 115, 62);
+}
+
+.team .our-team .team-member .icon .fa-facebook:hover {
+    border: 2px solid rgb(248, 115, 62);
+    /* display: block; */
+    box-shadow: 0 0 8px 5px rgb(248, 115, 62);
+}
+
+.team .our-team .team-member .icon .fa-linkedin:hover {
+    border: 2px solid rgb(248, 115, 62);
+    /* display: block; */
+    box-shadow: 0 0 8px 5px rgb(248, 115, 62);
+}
+
+.team .our-team .team-member .icon .fa-instagram:hover {
+    border: 2px solid rgb(248, 115, 62);
+    /* display: block; */
+    box-shadow: 0 0 8px 5px rgb(248, 115, 62);
+}
+
+
+    /* contact section stars */
+
+
+.contact {
+    height: 105vh;
+    width: 100%;
+    background-color: rgb(209, 206, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}    
+
+.contact .contact-text {
+    margin: 1% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact .contact-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(43, 92, 15);
+}
+
+.contact .contact-text h1 {
+    line-height: 50px;
+    font-weight: 800;
+    color: rgb(63, 44, 16);
+}
+
+.contact .contact-media {
+    width: 65%;
+    display: flex;
+    padding: 10px 0 10px 70px;
+    justify-content: center;
+    background-color: #aaa;
+    
+}
+
+
+.contact .contact-media .contact-media-item {
+    flex-basis: 30%;
+    margin: 5px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    position: relative;
+    height: 80px;
+}
+
+.contact .contact-media .contact-media-item i {
+    position: absolute;
+    top: 33%;
+    left: 0;
+    color: white;
+    background-color: rgb(240, 138, 23);
+    border: none;
+    box-shadow: 0 0 0 1rem rgb(240, 138, 23);
+    border-radius: 100%;
+}
+
+.contact .contact-media .contact-media-item h3 {
+    position: absolute;
+    font-size: 15px;
+    top: 0;
+    left: 16%;
+}
+
+.contact .contact-media .contact-media-item p {
+    font-size: 14px;
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    line-height: 20px;
+}
+
+.contact .contact-media .contact-media-item a {
+    font-size: 14px;
+    position: absolute;
+    top: 49%;
+    left: 16%;
+    line-height: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.find {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.find .map {
+    flex-basis: 40%;
+    margin: 1% 1% 5% 2%;
+}
+
+.find .map iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.find .form {
+    flex-basis: 30%;
+    margin: 1% 2% 5% 1%;
+    
+}
+
+.find .form form input, textarea {
+    width: 98%;
+    padding: 0.6rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    transition: all 0.2s ease 0s;
+}
+
+.find .form form input:hover {
+    border: 1px solid rgb(64, 65, 62);
+}
+
+.find .form a button {
+    padding: 1rem;
+    margin: 0.2rem;
+    border-radius: 5px;
+    border: 1px solid rgb(252, 167, 11);
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(252, 167, 11);
+    color: white;
+    letter-spacing: 0.05cap;
+    transition: all 0.2s ease 0s;
+}
+
+.find .form a button:hover {
+    background-color: white;
+    color: rgb(252, 167, 11);
+    cursor: pointer;
+}
+
+.find .form form input::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(64, 65, 62);
+}  
+
+.find .form form textarea::placeholder {
+    font-weight: bold;
+    opacity: 0.5;
+    color: rgb(64, 65, 62);
+}  
+
+    
+     /* AQN section Starts */
+
+
+.aqn {
+    width: 100%;
+    height: 40vh;
+    background-color: #8181819d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}     
+
+.aqn .aqn-address {
+    flex-basis: 30%;
+    height: 100%;
+    padding: 1%;
+}
+
+.aqn .aqn-links {
+    flex-basis: 30%;
+    height: 100%;
+    padding: 1%;
+    
+}
+
+.aqn .aqn-newsletter {
+    flex-basis: 30%;
+    height: 100%;
+    padding: 1%;
+    position: relative;
+}
+
+.aqn h2 {
+    font-size: 23px;
+    font-weight: 800;
+    color: rgb(235, 153, 31);
+}
+
+.aqn hr {
+    border: 1px solid rgb(122, 122, 122);
+    border-radius: 4px;
+    width: 13%;
+    margin-bottom: 2%;
+}
+
+.aqn p {
+    display: inline-block;
+}
+
+.aqn i, p, a {
+    padding: 2% 0;
+    font-size: 17px;
+    text-decoration: none;
+    color: black;
+}
+
+.aqn .aqn-links p {
+    line-height: 12px;
+
+}
+
+.aqn .aqn-newsletter p {
+    line-height: 23px;
+
+}
+
+.aqn .aqn-newsletter input {
+    padding: 5%;
+    width: 95%;
+    margin: 2% 0;
+    border: 1px solid rgb(236, 118, 33);
+    border-radius: 5px;
+    transition: all 0.2s ease 0s;
+}
+
+
+.aqn .aqn-newsletter button {
+    padding: 3% 6%;
+    background-color: rgb(236, 118, 33);
+    color: #fff;
+    border: 1px solid rgb(236, 118, 33);
+    border-radius: 5px;
+    position: absolute;
+    top: 153px;
+    left: 272px;
+}
+
+.aqn .aqn-newsletter input::placeholder {
+    color: rgb(122, 122, 122);
+}
+
+.aqn i {
+    color: rgb(252, 167, 11);
+}
+
+
+     /* footer starts */
+
+  
+footer {
+    height: 4vh;
+    text-align: center;
+    line-height: 4vh;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+footer span {
+    color: rgb(252, 167, 11);
+}
